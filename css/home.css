@@ -1,0 +1,158 @@
+/* Styles for the page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    background: #f8f8f8;
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.cta-button {
+    padding: 10px 20px;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background: #333;
+}
+
+.section {
+    padding: 40px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.section p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.services, .financial-operations, .why-choose-us {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.service-box, .financial-box, .choose-us-box, .review-box {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.services img, .financial-operations img, .why-choose-us img {
+    max-width: 100%;
+    height: auto;
+}
+
+.reviews {
+    display: flex;
+    align-items: center;
+}
+
+.review-box {
+    width: 23%;
+    margin: 1%;
+}
+
+.arrows {
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.sitemap {
+    display: flex;
+    justify-content: space-around;
+}
+
+.sitemap ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sitemap ul li {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        display: none;
+    }
+
+    nav ul.showing {
+        display: block;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .services, .financial-operations, .why-choose-us {
+        flex-direction: column;
+    }
+
+    .service-box, .financial-box, .choose-us-box, .review-box {
+        margin: 10px 0;
+    }
+}

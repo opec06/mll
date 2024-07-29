@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Financial Co.</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/map.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGl2BZFGiFxYO1-mddAuREFDDo0u9i0EQ" async defer></script>
+    <script src="js/scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/mll.png" alt="Micro Leasing Ltd Logo" style="height: 50px;">
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="investment.html">Investment</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Products</a>
+                        <div class="dropdown-content">
+                            <a href="loans.html">Loans</a>
+                            <div class="sub-dropdown">
+                                <a href="savings.html" class="subdropbtn">Savings</a>
+                                <div class="sub-dropdown-content">
+                                    <a href="savings/ajo.html">Ajo</a>
+                                    <a href="savings/esusu.html">Esusu</a>
+                                    <a href="savings/target.html">Target</a>
+                                    <a href="savings/peppe-dem.html">Peppe Dem</a>
+                                </div>
+                            </div>
+                            <a href="fixed-deposit.html">Fixed Deposit</a>
+                        </div>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="contact.html" class="cta-button">Get Started</a>
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </header>
+
+    <div class="section" id="section1">
+        <h2>Contact Us</h2>
+        <div id="map"></div>
+    </div>
+
+    <div class="section" id="section2">
+        <h2>Our Address</h2>
+        <p>20, Ogunlana Drive, Surulere, Lagos, Nigeria, Postal Code: 101283</p>
+    </div>
+
+    <div class="section" id="section3">
+        <h2>Contact Form</h2>
+        <form id="contact-form" action="send_email.php" method="post">
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Content of Inquiry:</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Financial Co. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
